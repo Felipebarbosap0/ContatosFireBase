@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "368824539991",
+    "firebase_url": "https://listacontatos-494d3-default-rtdb.firebaseio.com",
+    "project_id": "listacontatos-494d3",
+    "storage_bucket": "listacontatos-494d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368824539991:android:25cdfdffcd909896313c12",
+        "android_client_info": {
+          "package_name": "com.example.contatosfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368824539991-ebipfmepgefd3q2rte10egea9170b9s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5EUFJRsyjmbxJQ_BX5W2v4d7s8mzu1Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368824539991-ebipfmepgefd3q2rte10egea9170b9s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
