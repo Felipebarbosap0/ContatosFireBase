@@ -50,14 +50,9 @@ public class Cadastro extends AppCompatActivity {
 
     public  void BtnConfirmar(View V){
 
-        mAuth.createUserWithEmailAndPassword(email.getText().toString(), numero.getText().toString())
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
-                            Toast.makeText(getApplicationContext(),"Cadastro Realizado com sucesso!!!",
-                                    Toast.LENGTH_SHORT).show();
-                            myRef = database.getReference("User/" + mAuth.getUid()+"contatdos/");
+
+
+                            myRef = database.getReference("User/" + mAuth.getUid()+"/contatos/");
 
                             dados.put("nome",nome.getText().toString());
                             dados.put("número",numero.getText().toString());
@@ -70,13 +65,7 @@ public class Cadastro extends AppCompatActivity {
                             startActivity(ie);
 
 
-                        }else {
-                            Toast.makeText(getApplicationContext(),
-                                    "Erro ao Cadastrar, já existente ou usuario fora do padrão!",
-                                    Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
+
 
     }
 }

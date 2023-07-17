@@ -57,7 +57,7 @@ public class Main extends AppCompatActivity {
 
     }
     public void BtnCadastrar(View v){
-        Intent ie = new Intent(Main.this,CadastroUser.class);
+        Intent ie = new Intent(Main.this, CadastroUser.class);
         startActivity(ie);
 
     }

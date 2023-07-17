@@ -30,7 +30,7 @@ public class CadastroUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro);
+        setContentView(R.layout.activity_cadastro_user);
 
         iniciarComponentes();
     }
@@ -47,8 +47,11 @@ public class CadastroUser extends AppCompatActivity {
     }
 
     public void create(View v){
-        // mAuth =  email e senha
-        mAuth.createUserWithEmailAndPassword(email.getText().toString(), senha.getText().toString())
+
+        String e = email.getText().toString();
+        String s = senha.getText().toString();
+
+        mAuth.createUserWithEmailAndPassword(e, s)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
